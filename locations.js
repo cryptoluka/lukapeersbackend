@@ -40,7 +40,7 @@ const getLocations = async () => {
 
 const cacheLocations = async () => {
     const locations = await getLocations();
-    cache.set('locations', JSON.stringify(locations),180)
+    cache.set('locations', JSON.stringify(locations), 180);
 };
 
 const getCachedLocations = () => new Promise((resolve) => {
