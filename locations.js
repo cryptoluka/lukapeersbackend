@@ -22,7 +22,7 @@ const getLocation = async (ip) => new Promise((resolve) => {
         }
         try {
             console.log(`Request geolocation for IP: ${ip}`);
-            const res = await axios.get(`http://api.ipstack.com/${ip}?access_key=f260bbb194ebfd8c26883e512580fae5&output=json&legacy=1`);
+            const res = await axios.get(`http://api.ipstack.com/${ip}?access_key=c31d39b185d6f0bd3449f63d01e4839b&output=json&legacy=1`);
             cache.set(ip, res.data, 30*24*3600);
             resolve(res.data);
         } catch (e) {
